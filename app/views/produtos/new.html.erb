@@ -1,0 +1,23 @@
+<html>
+<body>
+<%= form_for Produto.new do |f| %>
+
+Nome
+<%= f.text_field :nome %>
+<br/>
+Descrição
+<%= f.text_area :descricao %>
+<br/>
+Quantidade
+<%= f.number_field :quantidade %>
+<br/>
+Preço
+<%= f.number_field :preco %>
+<br/>
+
+<%= f.submit %>
+
+
+<% end %>
+</body>
+</html>
